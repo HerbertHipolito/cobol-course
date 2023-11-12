@@ -1,0 +1,22 @@
+       IDENTIFICATION DIVISION.
+       PROGRAM-ID. teacher-version.  
+       ENVIRONMENT DIVISION.
+       CONFIGURATION SECTION.
+       SPECIAL-NAMES.
+           DECIMAL-POINT IS COMMA.
+       DATA DIVISION.
+       WORKING-STORAGE SECTION.
+       
+       77  WRK-CPF PIC X(11).
+       77  WRK-CPF-ED PIC ZZZ.ZZZ.ZZ9/99.    
+
+       PROCEDURE DIVISION.
+
+           ACCEPT WRK-CPF.
+           MOVE WRK-CPF TO WRK-CPF-ED.
+           DISPLAY WRK-CPF-ED
+
+            STOP RUN.
+
+      
+
